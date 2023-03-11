@@ -31,5 +31,4 @@ if (!app.Environment.IsDevelopment())
 //    pattern: "{controller}/{action=Index}/{id?}");
 
 //app.MapFallbackToFile("index.html");
-var _context = app.Services.GetService<NpgsqlContext>();
-var list= _context?.Categories.ToList();
+await app.RunAsync();

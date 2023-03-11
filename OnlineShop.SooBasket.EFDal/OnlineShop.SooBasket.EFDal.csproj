@@ -12,6 +12,13 @@
 
     <ItemGroup>
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0-preview.1.23111.4" />
+      <PackageReference Include="Npgsql" Version="8.0.0-preview.1" />
+      <PackageReference Include="Npgsql.DependencyInjection" Version="8.0.0-preview.1" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.0-preview.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\OnlineShop.SooBasket.Entities\OnlineShop.SooBasket.Entities.csproj" />
     </ItemGroup>
 
 </Project>
