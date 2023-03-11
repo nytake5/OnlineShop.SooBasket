@@ -8,9 +8,9 @@ public sealed class NpgsqlContext : DbContext
     public NpgsqlContext(DbContextOptions<NpgsqlContext> options) 
         : base(options)
     {
-        Database.ExecuteSql(
-            $"ALTER TABLE ImageItem ALTER COLUMN Image SET STORAGE EXTERNAL"
-        );
+        Database.ExecuteSql($""""
+            ALTER TABLE "ImageItems" ALTER COLUMN "Image" SET STORAGE EXTERNAL
+            """");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
