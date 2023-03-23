@@ -7,7 +7,7 @@ namespace OnlineShop.SooBasket.EFDal;
 
 public class ItemDao : BaseDao, IItemDao
 {
-    protected ItemDao(NpgsqlContext dbContext) 
+    protected ItemDao(NpgsqlContext dbContext)
         : base(dbContext)
     {
     }

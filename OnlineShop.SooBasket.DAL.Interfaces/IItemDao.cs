@@ -8,6 +8,4 @@ public interface IItemDao
     Task<Item> GetItemAsync(int id);
     Task<bool> RemoveItemAsync(int id);
     Task UpdateItemAsync(Item item);
-    
-    //todo: ImageItemCrud
 }
