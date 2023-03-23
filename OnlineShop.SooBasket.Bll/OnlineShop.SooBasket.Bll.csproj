@@ -10,4 +10,9 @@
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.0-preview.1" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\OnlineShop.SooBasket.BLL.Interfaces\OnlineShop.SooBasket.BLL.Interfaces.csproj" />
+      <ProjectReference Include="..\OnlineShop.SooBasket.EFDal\OnlineShop.SooBasket.EFDal.csproj" />
+    </ItemGroup>
+
 </Project>
