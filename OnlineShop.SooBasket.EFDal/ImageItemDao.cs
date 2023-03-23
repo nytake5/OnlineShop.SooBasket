@@ -18,7 +18,7 @@ public class ImageItemDao : BaseDao, IImageItemDao
         await DbContext.SaveChangesAsync();
     }
 
-    public async Task<ImageItem> GetImageItemAsync(int imageId);
+    public async Task<ImageItem> GetImageItemAsync(int imageId)
     {
         var result = await DbContext.ImageItems
             .FirstAsync(item => item.Id == imageId);
