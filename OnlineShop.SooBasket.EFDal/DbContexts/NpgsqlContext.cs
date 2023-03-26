@@ -39,7 +39,7 @@ public sealed class NpgsqlContext : DbContext
         var shoppingBasket = modelBuilder.Entity<ShoppingBasket>();
 
         shoppingBasket.HasKey(s => s.Id);
-        shoppingBasket.HasMany<Item>(s => s.Items)
+        shoppingBasket.HasMany(s => s.Items)
             .WithMany(i => i.ShoppingBaskets);
         shoppingBasket.HasOne(s => s.User)
             .WithMany(u => u.ShoppingBaskets)
@@ -67,7 +67,7 @@ public sealed class NpgsqlContext : DbContext
 
         categories.HasKey(c => c.Id);
         categories.Property(c => c.Name).IsRequired();
-        categories.HasMany<Item>(c => c.ListItem)
+        categories.HasMany(c => c.ListItem)
             .WithMany(i => i.Categories);
     }
 

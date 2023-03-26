@@ -6,7 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 
-var config = builder.Configuration.GetSection("EnvironmentVariables").Get<EnvironmentVariables>();
+var config = builder.Configuration
+    .GetSection("EnvironmentVariables")
+    .Get<EnvironmentVariables>();
 
 builder.Services.AddEntityFrameworkNpgsql().AddDbContext<NpgsqlContext>(
     options =>

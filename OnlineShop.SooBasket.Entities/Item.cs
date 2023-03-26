@@ -1,6 +1,4 @@
-﻿using System.Net.Mime;
-
-namespace OnlineShop.SooBasket.Entities;
+﻿namespace OnlineShop.SooBasket.Entities;
 
 public class Item
 {
